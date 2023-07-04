@@ -1,0 +1,156 @@
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { ProjectCard } from "./ProjectCard";
+import img1 from "../assets/img/img1.png";
+import img2 from "../assets/img/img2.png";
+import img3 from "../assets/img/img3.png";
+import img4 from "../assets/img/img4.png";
+import img5 from "../assets/img/img5.png";
+import img6 from "../assets/img/img6.png";
+import colorSharp2 from "../assets/img/color-sharp2.png";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import {PersonWorkspace, MortarboardFill} from 'react-bootstrap-icons'
+import {SiCodechef, SiGeeksforgeeks, SiLeetcode} from 'react-icons/si';
+import {FaHackerrank} from 'react-icons/fa';
+
+export const Projects = () => {
+
+  const codingProfiles = [
+    { platform: 'LeetCode', icon: <SiLeetcode fontSize={'4.5rem'}/>, src:'https://leetcode.com/abhay_9839/' , username: 'abhay_9839' },
+    { platform: 'HackerRank', icon: <FaHackerrank fontSize={'4.5rem'}/>, src: "https://www.hackerrank.com/abhaysharma0983?hr_r=1", username: '@abhaysharma0983' },
+    { platform: 'GeeksforGeeks', icon: <SiGeeksforgeeks fontSize={'4.5rem'}/>, src: "https://auth.geeksforgeeks.org/user/abhay_9839/practice/", username: 'abhay_9839' },
+    { platform: 'CodeChef', icon: <SiCodechef fontSize={'4.5rem'}/>, src: "https://www.codechef.com/users/abhay_9839", username: 'abhay_9839' },
+    // Add more coding profiles here
+  ];
+
+  const experiences = [
+    { year: '2023 - Present(6 months)', title: 'SDE Intern @Essentia Softserv LLP', description: 'Working as a Full stack developer and developing responsive applications', icon: <PersonWorkspace/> },
+    { year: '2020 - Present', title: 'Ambalika Institute of Management and Technology', description: 'Bachelor of Technology (Computer Science and Engineering)', icon: <MortarboardFill/> }
+  ];
+
+  const projects = [
+    {
+      title: "Code Campus",
+      description: "An online learning website solely dedicated to assisting students in acquiring coding skills",
+      imgUrl: img1,
+      src: "https://codecampus363.web.app/",
+    },
+    {
+      title: "Invoice App",
+      description: "A user-friendly app that empowers shopkeepers to generate invoices within seconds by following a simple set of instructions",
+      imgUrl: img2,
+      src: "https://invoicer-app.netlify.app/",
+    },
+    {
+      title: "Contact Manager",
+      description: "Web contact manager app which can store contacts and user can perform CRUD operations on the contacts",
+      imgUrl: img3,
+      src: "https://github.com/Abhay31/Contact-Manager",
+    },
+    {
+      title: "iNotebook",
+      description: "iNotebook is a React Application for managing personal notes on the cloud",
+      imgUrl: img4,
+      src: "https://github.com/Abhay31/iNotebook",
+    },
+    {
+      title: "TextUtils",
+      description: "TextUtils is a utility website that enables you to manipulate your text according to your preferences",
+      imgUrl: img5,
+      src: "https://github.com/Abhay31/TextUtils",
+    },
+    {
+      title: "Urban News",
+      description: "UrbanNews is a ultimate news app designed to deliver quick daily news bites",
+      imgUrl: img6,
+      src: "https://github.com/Abhay31/UrbanNews",
+    },
+  ];
+
+  return (
+    <section className="project" id="project">
+      <Container>
+        <Row>
+          <Col size={12}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+                <h2>My Work</h2>
+                <p>Throughout my exploration of the realm of Computer Science and Engineering, I have acquired a versatile skill set and fostered a mindset centered around problem-solving. My projects showcases my proficiency in implementing innovative solutions and delivering concrete outcomes.</p>
+                <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                    <Nav.Item>
+                      <Nav.Link eventKey="first" style={{cursor: "pointer"}}>Projects</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="second" style={{cursor: "pointer"}}>Experience</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="third" style={{cursor: "pointer"}}>Profiles</Nav.Link>
+                    </Nav.Item>
+                  </Nav>
+                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                    <Tab.Pane eventKey="first">
+                      <Row>
+                        {
+                          projects.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="second">
+                      <Container className='m-5 p-5'>
+                        <VerticalTimeline>
+                          {experiences.map((experience, index) => (
+                            <VerticalTimelineElement
+                              key={index}
+                              className="vertical-timeline-element"
+                              contentStyle={{ background: 'white', color: '#fff' }}
+                              contentArrowStyle={{ borderRight: '25px solid  #f4f4f4' }}
+                              date={experience.year}
+                              iconStyle={{ background: '#383838', color: '#fff' }}
+                              icon={experience.icon}
+                            >
+                              <h3 className="vertical-timeline-element-title d-flex justify-content-center text-muted">{experience.title}</h3>
+                              <span className='d-flex h5 justify-content-around m-4 text-muted'>{experience.description}</span>
+                            </VerticalTimelineElement>
+                          ))}
+                        </VerticalTimeline>
+                      </Container>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="third">
+                    <Container className='justify-content-between'>
+                        <Row>
+                          {codingProfiles.map((profile, index, src) => (
+                            <Col key={index} xs={6} sm={3}>
+                              <div className="profile m-4 d-flex justify-content-center align-items-center flex-column">
+                                <a href={profile.src} target="_blank" rel="noreferrer">
+                                  <div className="icon m-2 text-light">{profile.icon}</div>
+                                </a>
+                                <div className="platform m-2">{profile.platform}</div>
+                                <div className="username m-2">{profile.username}</div>
+                              </div>
+                            </Col>
+                          ))}
+                        </Row>
+                      </Container>
+                    </Tab.Pane>
+                  </Tab.Content>
+                </Tab.Container>
+              </div>}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+      <img className="background-image-right" alt="image6" src={colorSharp2}></img>
+    </section>
+  )
+}
