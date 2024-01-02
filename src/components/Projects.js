@@ -27,14 +27,14 @@ export const Projects = () => {
   ];
 
   const experiences = [
-    { year: 'Aug 2023 - Dec 2023(5 months)', title: 'SDE Intern @Essentia.dev', description: 'Directed the seamless deployment and tailored configuration of open-source ERPNext software modules and layouts within a robust production environment on Amazon EC2. Employed Docker and Nginx to elevate the efficiency and precision of the company\'s business processes, meticulously fine-tuning resource allocation. This strategic integration not only harmonized operations but also played a pivotal role in enhancing overall performance, fostering a more streamlined and optimized workflow', icon: <PersonWorkspace/> },
+    { year: 'August 2023 - December 2023(5 months)', title: 'SDE Intern @Essentia.dev', description: 'Directed the seamless deployment and tailored configuration of open-source ERPNext software modules and layouts within a robust production environment on Amazon EC2. Employed Docker and Nginx to elevate the efficiency and precision of the company\'s business processes, meticulously fine-tuning resource allocation. This strategic integration not only harmonized operations but also played a pivotal role in enhancing overall performance, fostering a more streamlined and optimized workflow', icon: <PersonWorkspace/> },
     { year: '2020 - Present', title: 'Ambalika Institute of Management and Technology', description: 'Bachelor of Technology (Computer Science and Engineering)', icon: <MortarboardFill/> }
   ];
 
   const projects = [
     {
       title: "Code Campus",
-      description: "hhhh",
+      description: "Fostering a vibrant community committed to empowering students and enthusiasts within the dynamic landscape of computing, our mission is to kindle a fervor for information technology that transcends the boundaries of conventional coursework.",
       imgUrl: img7,
       src: "https://cosmiccoders-official.web.app/",
     },
