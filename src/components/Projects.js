@@ -6,6 +6,7 @@ import img3 from "../assets/img/img3.png";
 import img4 from "../assets/img/img4.png";
 import img5 from "../assets/img/img5.png";
 import img6 from "../assets/img/img6.png";
+import img7 from "../assets/img/img7.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -26,11 +27,17 @@ export const Projects = () => {
   ];
 
   const experiences = [
-    { year: '2023 - Present(6 months)', title: 'SDE Intern @Essentia Softserv LLP', description: 'Working as a Full stack developer and developing responsive applications', icon: <PersonWorkspace/> },
+    { year: 'Aug 2023 - Dec 2023(5 months)', title: 'SDE Intern @Essentia.dev', description: 'Directed the seamless deployment and tailored configuration of open-source ERPNext software modules and layouts within a robust production environment on Amazon EC2. Employed Docker and Nginx to elevate the efficiency and precision of the company\'s business processes, meticulously fine-tuning resource allocation. This strategic integration not only harmonized operations but also played a pivotal role in enhancing overall performance, fostering a more streamlined and optimized workflow', icon: <PersonWorkspace/> },
     { year: '2020 - Present', title: 'Ambalika Institute of Management and Technology', description: 'Bachelor of Technology (Computer Science and Engineering)', icon: <MortarboardFill/> }
   ];
 
   const projects = [
+    {
+      title: "Code Campus",
+      description: "hhhh",
+      imgUrl: img7,
+      src: "https://cosmiccoders-official.web.app/",
+    },
     {
       title: "Code Campus",
       description: "An online learning website solely dedicated to assisting students in acquiring coding skills",

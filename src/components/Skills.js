@@ -81,7 +81,29 @@ export const Skills = () => {
                                   />
                                 )}
                               </ChangingProgressProvider>
-                              <h5 style={{fontFamily: 'sans-serif'}}>React</h5>
+                              <h5 style={{fontFamily: 'sans-serif'}}>ReactJs</h5>
+                            </div>
+                            {/*Nextjs*/}
+                            <div className="item">
+                              <ChangingProgressProvider values={[0, 50]}>
+                                {percentage => (
+                                  <CircularProgressbar
+                                    value={percentage}
+                                    text={`${percentage}%`}
+                                    background
+                                    backgroundPadding={20}
+                                    styles={buildStyles({
+                                      backgroundColor: "#151515",
+                                      textColor: "#fff",
+                                      textSize: "0.8rem",
+                                      pathColor: "#863494",
+                                      trailColor: "transparent",
+                                      pathTransitionDuration: 1
+                                    })}
+                                  />
+                                )}
+                              </ChangingProgressProvider>
+                              <h5 style={{fontFamily: 'sans-serif'}}>NextJs</h5>
                             </div>
                             {/*HTML*/}
                             <div className="item">
