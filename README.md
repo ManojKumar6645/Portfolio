@@ -1,22 +1,34 @@
+# Personal Portfolio
+
+Welcome to my personal portfolio! This website showcases my skills, projects, and experience as a Software Engineer specializing in scalable applications.
+
+## 🚀 Getting Started
+
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode.  
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.  
+The page reloads automatically on changes, and you may see lint errors in the console.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.  
 
 ### `npm run build`
+Builds the app for production, optimizing it for performance.  
+The final build is minified, and filenames include hashes.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📌 Features
+- Showcases my skills and experience
+- Displays projects and technologies I work with
+- Fully responsive design for all devices
+- Smooth animations and interactive UI
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎯 Tech Stack
+- **Frontend:** React.js, HTML, CSS, JavaScript  
+- **Backend:** Node.js, Express.js  
+- **Database:** MySQL, MongoDB  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📩 Contact
+📧 Email: [abhaysh3101@gmail.com](mailto:abhaysh3101@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/abhaysharma31](https://www.linkedin.com/in/abhaysharma31/)  
+
+Thank you for visiting my portfolio! 🚀
