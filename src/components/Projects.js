@@ -27,7 +27,7 @@ export const Projects = () => {
 
   const experiences = [
     {
-      year: 'Jan 2025 - Present',
+      year: 'January 2025 - Present',
       title: 'Software Engineer @Salgem Infoigy Tech Pvt Ltd',
       description: (
         <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
