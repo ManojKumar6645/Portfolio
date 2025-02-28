@@ -60,10 +60,9 @@ export const Banner = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>Hi! I'm Abhay</h1>
-                  <h1 style={{fontSize: '3.5rem'}}><span className="txt-rotate" data-period="1000" data-rotate='["An Engineering Scholar", "Web Developer", "Competitive Programmer", "User Interface Designer"]'><span className="wrap">{text}</span></span></h1>
-                  <p>I am a Final Year Student Pursuing B.Tech in Computer Science and Engineering. Being a technology enthusiast, I love exploring new technologies and leveraging them to solve real-life problems.
-                  Thank you for visiting my portfolio website. I am open to learning and contributing to the community by innovating and working hard.</p>
-                  <a href={Resume} download target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+                  <h1 style={{ fontSize: '3.5rem' }}><span className="txt-rotate" data-period="1000" data-rotate='["An Engineering Scholar", "Web Developer", "Competitive Programmer", "User Interface Designer"]'><span className="wrap">{text}</span></span></h1>
+                  <p>I am a Software Engineer specializing in scalable applications. As a technology enthusiast, I love exploring new technologies and leveraging them to solve real-world problems. Thank you for visiting my portfolio website! I am always eager to learn, innovate, and contribute to the tech community.</p>
+                  <a href={Resume} download target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
                     <button>Download Resume<ArrowRightCircle size={25} /></button>
                   </a>
                 </div>}
