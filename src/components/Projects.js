@@ -88,7 +88,7 @@ export const Projects = () => {
       title: "Contact Manager",
       description: "Web contact manager app which can store contacts and user can perform CRUD operations on the contacts",
       imgUrl: img3,
-      src: "https://github.com/Abhay31/Contact-Manager",
+      src: "https://contact-manager-v8pm.onrender.com/",
     },
     {
       title: "iNotebook",
@@ -100,7 +100,7 @@ export const Projects = () => {
       title: "TextUtils",
       description: "TextUtils is a utility website that enables you to manipulate your text according to your preferences",
       imgUrl: img5,
-      src: "https://github.com/Abhay31/TextUtils",
+      src: "https://textutils-we-bapp.netlify.app/",
     },
     {
       title: "Urban News",
