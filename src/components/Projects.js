@@ -62,7 +62,7 @@ export const Projects = () => {
       ),
       icon: <PersonWorkspace />,
     },
-    { year: '2020 - 2024', title: 'Ambalika Institute of Management and Technology', description: 'Bachelor of Technology (Computer Science and Engineering)', icon: <MortarboardFill /> }
+    { year: '2020 - 2024', title: 'Dr. A. P. J. Abdul Kalam Technical University', description: 'Bachelor of Technology (Computer Science and Engineering)', icon: <MortarboardFill /> }
   ];
 
   const projects = [
