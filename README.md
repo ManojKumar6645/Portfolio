@@ -28,7 +28,7 @@ The final build is minified, and filenames include hashes.
 - **Database:** MySQL, MongoDB  
 
 ## 📩 Contact
-📧 Email: [abhaysh3101@gmail.com](mailto:abhaysh3101@gmail.com)  
-🔗 LinkedIn: [linkedin.com/in/abhaysharma31](https://www.linkedin.com/in/abhaysharma31/)  
+📧 Email: [manojkumar65927@gmail.com](mailto:manojkumar65927@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/manoj-kumar-4b38b4244/](https://www.linkedin.com/in/manoj-kumar-4b38b4244/)  
 
 Thank you for visiting my portfolio! 🚀
