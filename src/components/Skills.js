@@ -38,9 +38,9 @@ export const Skills = () => {
               <h2>Skills</h2>
               <p>Here you'll find a showcase of my diverse range of skills and expertise. It highlights the specific talents and proficiencies that make me a valuable asset in my field. I am proficient in C++ programming language and have good knowledge of Data Structures and Algorithms.</p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                {/*C/C++*/}
+               
                 <div className="item">
-                  <ChangingProgressProvider values={[0, 80]}>
+                  <ChangingProgressProvider values={[0, 70]}>
                     {percentage => (
                       <CircularProgressbar
                         value={percentage}
@@ -58,9 +58,51 @@ export const Skills = () => {
                       />
                     )}
                   </ChangingProgressProvider>
-                  <h5 style={{ fontFamily: 'sans-serif' }}>C/C++</h5>
+                  <h5 style={{ fontFamily: 'sans-serif' }}>C#</h5>
                 </div>
-                {/*React*/}
+              
+                <div className="item">
+                  <ChangingProgressProvider values={[0, 60]}>
+                    {percentage => (
+                      <CircularProgressbar
+                        value={percentage}
+                        text={`${percentage}%`}
+                        background
+                        backgroundPadding={20}
+                        styles={buildStyles({
+                          backgroundColor: "#151515",
+                          textColor: "#fff",
+                          textSize: "0.8rem",
+                          pathColor: "#863494",
+                          trailColor: "transparent",
+                          pathTransitionDuration: 1
+                        })}
+                      />
+                    )}
+                  </ChangingProgressProvider>
+                  <h5 style={{ fontFamily: 'sans-serif' }}>.NET Core /ASP.NET core MVC </h5>
+                </div>
+                <div className="item">
+                  <ChangingProgressProvider values={[0, 50]}>
+                    {percentage => (
+                      <CircularProgressbar
+                        value={percentage}
+                        text={`${percentage}%`}
+                        background
+                        backgroundPadding={20}
+                        styles={buildStyles({
+                          backgroundColor: "#151515",
+                          textColor: "#fff",
+                          textSize: "0.8rem",
+                          pathColor: "#863494",
+                          trailColor: "transparent",
+                          pathTransitionDuration: 1
+                        })}
+                      />
+                    )}
+                  </ChangingProgressProvider>
+                  <h5 style={{ fontFamily: 'sans-serif' }}>Entity Framework</h5>
+                </div>
                 <div className="item">
                   <ChangingProgressProvider values={[0, 60]}>
                     {percentage => (
@@ -81,28 +123,6 @@ export const Skills = () => {
                     )}
                   </ChangingProgressProvider>
                   <h5 style={{ fontFamily: 'sans-serif' }}>ReactJs</h5>
-                </div>
-                {/*Nextjs*/}
-                <div className="item">
-                  <ChangingProgressProvider values={[0, 50]}>
-                    {percentage => (
-                      <CircularProgressbar
-                        value={percentage}
-                        text={`${percentage}%`}
-                        background
-                        backgroundPadding={20}
-                        styles={buildStyles({
-                          backgroundColor: "#151515",
-                          textColor: "#fff",
-                          textSize: "0.8rem",
-                          pathColor: "#863494",
-                          trailColor: "transparent",
-                          pathTransitionDuration: 1
-                        })}
-                      />
-                    )}
-                  </ChangingProgressProvider>
-                  <h5 style={{ fontFamily: 'sans-serif' }}>NextJs</h5>
                 </div>
                 {/*HTML*/}
                 <div className="item">
@@ -190,7 +210,7 @@ export const Skills = () => {
                       />
                     )}
                   </ChangingProgressProvider>
-                  <h5 style={{ fontFamily: 'sans-serif' }}>Node</h5>
+                  <h5 style={{ fontFamily: 'sans-serif' }}>NodeJS</h5>
                 </div>
                 {/*ExpressJs*/}
                 <div className="item">
@@ -216,7 +236,7 @@ export const Skills = () => {
                 </div>
                 {/*Bootstrap*/}
                 <div className="item">
-                  <ChangingProgressProvider values={[0, 70]}>
+                  <ChangingProgressProvider values={[0, 50]}>
                     {percentage => (
                       <CircularProgressbar
                         value={percentage}
@@ -278,11 +298,11 @@ export const Skills = () => {
                       />
                     )}
                   </ChangingProgressProvider>
-                  <h5 style={{ fontFamily: 'sans-serif' }}>MongoDb</h5>
+                  <h5 style={{ fontFamily: 'sans-serif' }}>Sql Server</h5>
                 </div>
                 {/*Git and Github*/}
                 <div className="item">
-                  <ChangingProgressProvider values={[0, 75]}>
+                  <ChangingProgressProvider values={[0, 76]}>
                     {percentage => (
                       <CircularProgressbar
                         value={percentage}

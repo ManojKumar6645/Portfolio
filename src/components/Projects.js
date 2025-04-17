@@ -1,28 +1,30 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import img1 from "../assets/img/img1.png";
-import img2 from "../assets/img/img2.png";
-import img3 from "../assets/img/img3.png";
-import img4 from "../assets/img/img4.png";
-import img5 from "../assets/img/img5.png";
-import img6 from "../assets/img/img6.png";
-import img7 from "../assets/img/img7.png";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { PersonWorkspace, MortarboardFill } from 'react-bootstrap-icons'
-import { SiCodechef, SiGeeksforgeeks, SiLeetcode } from 'react-icons/si';
-import { FaHackerrank } from 'react-icons/fa';
+import { CiLinkedin } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+import { MdWork } from 'react-icons/md';
 
 export const Projects = () => {
 
   const codingProfiles = [
-    { platform: 'LeetCode', icon: <SiLeetcode fontSize={'4.5rem'} />, src: 'https://leetcode.com/abhay_9839/', username: 'abhay_9839' },
-    { platform: 'HackerRank', icon: <FaHackerrank fontSize={'4.5rem'} />, src: "https://www.hackerrank.com/profile/abhay_9839", username: '@abhaysharma0983' },
-    { platform: 'GeeksforGeeks', icon: <SiGeeksforgeeks fontSize={'4.5rem'} />, src: "https://auth.geeksforgeeks.org/user/abhay_9839/practice/", username: 'abhay_9839' },
-    { platform: 'CodeChef', icon: <SiCodechef fontSize={'4.5rem'} />, src: "https://www.codechef.com/users/abhay_9839", username: 'abhay_9839' },
+    { platform: 'LinkedIn', icon: <CiLinkedin fontSize={'4.5rem'} />, src: 'www.linkedin.com/in/manoj-kumar-4b38b4244', username: 'Manoj Kumar' },
+    { platform: 'Instagram', icon: <FaInstagram fontSize={'4.5rem'} />, src: "https://www.instagram.com/mano_jkumar6052/", username: 'mano_jkumar6052' },
+    { 
+      platform: 'Naukri', 
+      icon: <MdWork fontSize={'4.5rem'} />, 
+      src: "https://www.naukri.com/mnjuser/profile?id=&altresid", 
+      username: 'Manoj Kumar' 
+    },
+    
+    { platform: 'Github', icon: <FaGithubSquare fontSize={'4.5rem'} />, src: "https://github.com/ManojKumar6645", username: 'Manojkumar6645' },
   ];
 
   const experiences = [
@@ -39,7 +41,7 @@ export const Projects = () => {
       icon: <PersonWorkspace />,
     },
     {
-      year: 'June 2024 - December 2024 (6 months)',
+      year: 'May 2024 - December 2024 (7 months)',
       title: 'SDE Intern @Salgem Infoigy Tech Pvt Ltd',
       description: (
         <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
@@ -51,63 +53,32 @@ export const Projects = () => {
       icon: <PersonWorkspace />,
     },
     {
-      year: 'August 2023 - December 2023 (5 months)',
-      title: 'SDE Intern @Essentia.dev',
+      year: 'January 2024 - April 2024 ',
+      title: 'SDE Intern @KSoft Vision',
       description: (
         <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
-          <li>Directed the seamless deployment and tailored configuration of open-source ERPNext software modules and layouts within a robust production environment on Amazon EC2.</li>
-          <li>Employed Docker and Nginx to elevate the efficiency and precision of the company&apos;s business processes, meticulously fine-tuning resource allocation.</li>
-          <li>This strategic integration streamlined operations, enhancing overall performance with an optimized workflow.</li>
+          <li>Designed and developed dynamic websites and desktop applications using .NET technologies, ensuring robust functionality and user-friendly interfaces.</li>
+          <li>Implemented efficient backend systems with SQL Server, enhancing data management and application performance.</li>
+          <li>Gained hands-on experience in building scalable and reliable solutions through practical training.</li>
         </ul>
       ),
       icon: <PersonWorkspace />,
     },
-    { year: '2020 - 2024', title: 'Dr. A. P. J. Abdul Kalam Technical University', description: 'Bachelor of Technology (Computer Science and Engineering)', icon: <MortarboardFill /> }
+    { year: '2021 - 2024', title: 'Dr. Bhimrao Ambedkar University(Central) Lucknow', description: 'Bachelor of Science (Information Technology)', icon: <MortarboardFill /> }
   ];
 
   const projects = [
-    {
-      title: "Code Campus",
-      description: "Fostering a vibrant community committed to empowering students and enthusiasts within the dynamic landscape of computing, our mission is to kindle a fervor for information technology that transcends the boundaries of conventional coursework.",
-      imgUrl: img7,
-      src: "https://cosmiccoders-official.web.app/",
-    },
-    {
-      title: "Code Campus",
-      description: "An online learning website solely dedicated to assisting students in acquiring coding skills",
-      imgUrl: img1,
-      src: "https://codecampus363.web.app/",
-    },
-    {
-      title: "Invoice App",
-      description: "A user-friendly app that empowers shopkeepers to generate invoices within seconds by following a simple set of instructions",
-      imgUrl: img2,
-      src: "https://invoicer-app.netlify.app/",
-    },
-    {
-      title: "Contact Manager",
-      description: "Web contact manager app which can store contacts and user can perform CRUD operations on the contacts",
-      imgUrl: img3,
-      src: "https://contact-manager-v8pm.onrender.com/",
-    },
-    {
-      title: "iNotebook",
-      description: "iNotebook is a React Application for managing personal notes on the cloud",
-      imgUrl: img4,
-      src: "https://github.com/Abhay31/iNotebook",
-    },
-    {
-      title: "TextUtils",
-      description: "TextUtils is a utility website that enables you to manipulate your text according to your preferences",
-      imgUrl: img5,
-      src: "https://textutils-we-bapp.netlify.app/",
-    },
-    {
-      title: "Urban News",
-      description: "UrbanNews is a ultimate news app designed to deliver quick daily news bites",
-      imgUrl: img6,
-      src: "https://github.com/Abhay31/UrbanNews",
-    },
+  //   {
+  //      title: "IAS Gaon – Institute E-Learning Website",
+  // description: "A dedicated e-learning web platform built for the IAS Gaon institute to deliver their exclusive courses online. Developed using React for the frontend and Node.js for the backend, the platform allows students to easily access video lectures, course materials, and structured learning paths designed by the institute. Optimized for both desktop and mobile users.",
+
+  //   },
+  //   {
+  //     title: "Medical Shop Management Desktop App",
+  // description: "A robust desktop application designed to streamline the management of medical shops. Developed using C# and WinForms, this app helps manage inventory, sales, purchases, stock levels, and customer information. It provides easy access to product details, pricing, and stock alerts, making it a must-have tool for small and medium-sized pharmacies to enhance their operational efficiency.",
+  
+  //   },
+   
   ];
 
   return (
@@ -119,8 +90,7 @@ export const Projects = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>My Work</h2>
-                  <p>Throughout my exploration of the realm of Computer Science and Engineering, I have acquired a versatile skill set and fostered a mindset centered around problem-solving. My projects showcases my proficiency in implementing innovative solutions and delivering concrete outcomes.</p>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                  <p>Throughout my journey as a Software Engineer, I have developed a diverse skill set focused on designing, building, and optimizing reliable software solutions. My projects demonstrate my ability to transform complex requirements into practical, high-quality applications that drive efficiency and deliver measurable results.</p>                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
                         <Nav.Link eventKey="first" style={{ cursor: "pointer" }}>Projects</Nav.Link>
@@ -168,11 +138,11 @@ export const Projects = () => {
                         </Container>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <Container className='justify-content-between'>
-                          <Row>
+                        <Container className='justify-content-center'>
+                          <Row className="justify-content-center">
                             {codingProfiles.map((profile, index, src) => (
                               <Col key={index} xs={6} sm={3}>
-                                <div className="profile m-4 d-flex justify-content-center align-items-center flex-column">
+                                <div className="profile m-8 d-flex justify-content-center align-items-center flex-column">
                                   <a href={profile.src} target="_blank" rel="noreferrer">
                                     <div className="icon m-2 text-light">{profile.icon}</div>
                                   </a>

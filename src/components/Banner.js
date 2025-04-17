@@ -13,7 +13,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   // eslint-disable-next-line no-unused-vars
   const [index, setIndex] = useState(1);
-  const toRotate = ["An Engineering Scholar", "Web Developer", "Competitive Programmer", "User Interface Designer"];
+  const toRotate = ["An Innovative Software Engineer", "Web Developer", "Requirement Analyst", "Full Stack Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -59,10 +59,9 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>Hi! I'm Abhay</h1>
-                  <h1 style={{ fontSize: '3.5rem' }}><span className="txt-rotate" data-period="1000" data-rotate='["An Engineering Scholar", "Web Developer", "Competitive Programmer", "User Interface Designer"]'><span className="wrap">{text}</span></span></h1>
-                  <p>I am a Software Engineer specializing in scalable applications. As a technology enthusiast, I love exploring new technologies and leveraging them to solve real-world problems. Thank you for visiting my portfolio website! I am always eager to learn, innovate, and contribute to the tech community.</p>
-                  <a href={Resume} download target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+                  <h1>Hi! I'm Manoj</h1>
+                  <h1 style={{ fontSize: '3.0rem' }}><span className="txt-rotate" data-period="1000" data-rotate='["An Innovative Software Engineer", "Web Developer", "Requirement Analyst", "Full Stack Developer "]'><span className="wrap">{text}</span></span></h1>
+                  <p>As a dedicated Software Engineer with a passion for building robust, high-performance applications, I thrive on transforming complex challenges into streamlined, scalable solutions. Continuously driven by curiosity and innovation, I am committed to enhancing user experiences and delivering exceptional results through cutting-edge technologies. Thank you for exploring my portfolio — I am always excited to collaborate, innovate, and push the boundaries of technology.</p>                  <a href={Resume} download target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
                     <button>Download Resume<ArrowRightCircle size={25} /></button>
                   </a>
                 </div>}

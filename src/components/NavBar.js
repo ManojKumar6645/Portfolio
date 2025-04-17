@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
-import { Github, Twitter } from "react-bootstrap-icons";
+import { Github } from "react-bootstrap-icons";
 
 export const NavBar = () => {
 
@@ -32,7 +32,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <h2 style={{color: '#fff', fontFamily: 'monospace san-serif', fontStyle: 'oblique', fontWeight: 'bold', fontSize: '2.5rem'}}>ABHAY</h2>
+            <h2 style={{color: '#fff', fontFamily: 'monospace san-serif', fontStyle: 'oblique', fontWeight: 'bold', fontSize: '2.5rem'}}>Manoj</h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -45,10 +45,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/abhaysharma31/" target="_blank" rel="noreferrer"><img src={navIcon1} alt="" /></a>
-                <a href="https://x.com/abhaysh3101" target="_blank" rel="noreferrer"><Twitter className="hii" style={{color: "#fff"}}/></a>
-                <a href="https://github.com/Abhay31" target="_blank" rel="noreferrer"><Github className="hii" style={{color: "#fff"}}/></a>
-                <a href="https://www.instagram.com/_abhay.1931/" target="_blank" rel="noreferrer"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/manoj-kumar-4b38b4244/" target="_blank" rel="noreferrer"><img src={navIcon1} alt="" /></a>
+                <a href="https://github.com/ManojKumar6645" target="_blank" rel="noreferrer"><Github className="hii" style={{color: "#fff"}}/></a>
+                <a href="https://www.instagram.com/mano_jkumar6052/" target="_blank" rel="noreferrer"><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
