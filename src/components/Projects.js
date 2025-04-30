@@ -11,19 +11,22 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { MdWork } from 'react-icons/md';
+import img1 from '../assets/img/ias-gaon.png'
+import img2 from '../assets/img/googleanalytics.png'
+import img3 from '../assets/img/refdash.png'
 
 export const Projects = () => {
 
   const codingProfiles = [
     { platform: 'LinkedIn', icon: <CiLinkedin fontSize={'4.5rem'} />, src: 'www.linkedin.com/in/manoj-kumar-4b38b4244', username: 'Manoj Kumar' },
     { platform: 'Instagram', icon: <FaInstagram fontSize={'4.5rem'} />, src: "https://www.instagram.com/mano_jkumar6052/", username: 'mano_jkumar6052' },
-    { 
-      platform: 'Naukri', 
-      icon: <MdWork fontSize={'4.5rem'} />, 
-      src: "https://www.naukri.com/mnjuser/profile?id=&altresid", 
-      username: 'Manoj Kumar' 
+    {
+      platform: 'Naukri',
+      icon: <MdWork fontSize={'4.5rem'} />,
+      src: "https://www.naukri.com/mnjuser/profile?id=&altresid",
+      username: 'Manoj Kumar'
     },
-    
+
     { platform: 'Github', icon: <FaGithubSquare fontSize={'4.5rem'} />, src: "https://github.com/ManojKumar6645", username: 'Manojkumar6645' },
   ];
 
@@ -68,17 +71,22 @@ export const Projects = () => {
   ];
 
   const projects = [
-  //   {
-  //      title: "IAS Gaon – Institute E-Learning Website",
-  // description: "A dedicated e-learning web platform built for the IAS Gaon institute to deliver their exclusive courses online. Developed using React for the frontend and Node.js for the backend, the platform allows students to easily access video lectures, course materials, and structured learning paths designed by the institute. Optimized for both desktop and mobile users.",
+    {
+      title: "IAS Gaon – Institute E-Learning Website",
+      description: "A dedicated e-learning web platform built for the IAS Gaon institute to deliver their exclusive courses online. Developed using React for the frontend and Node.js for the backend, the platform allows students to easily access video lectures, course materials, and structured learning paths designed by the institute. Optimized for both desktop and mobile users.",
+      imgUrl: img1
+    },
+    {
+      title: "Google Analytics",
+      description: "Integrated Google Analytics to track user behavior, monitor engagement, and enable data-driven performance optimization in an application developed with a React front-end and .NET back-end.",
+      imgUrl: img2
+    },
+    {
+      title: "Refrence Manager",
+      description: "Built a Reference Manager Tool in React to organize, search, and manage academic or professional references with an intuitive user interface.",
+      imgUrl: img3
+    },
 
-  //   },
-  //   {
-  //     title: "Medical Shop Management Desktop App",
-  // description: "A robust desktop application designed to streamline the management of medical shops. Developed using C# and WinForms, this app helps manage inventory, sales, purchases, stock levels, and customer information. It provides easy access to product details, pricing, and stock alerts, making it a must-have tool for small and medium-sized pharmacies to enhance their operational efficiency.",
-  
-  //   },
-   
   ];
 
   return (
