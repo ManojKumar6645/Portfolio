@@ -23,9 +23,9 @@ The final build is minified, and filenames include hashes.
 - Smooth animations and interactive UI
 
 ## 🎯 Tech Stack
-- **Frontend:** React.js, HTML, CSS, JavaScript  
+- **Frontend:**> .Net, WIN Form, React.js, HTML, CSS, JavaScript  
 - **Backend:** Node.js, Express.js  
-- **Database:** MySQL, MongoDB  
+- **Database:** MySQL, SQL Server  
 
 ## 📩 Contact
 📧 Email: [manojkumar65927@gmail.com](mailto:manojkumar65927@gmail.com)  
