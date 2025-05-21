@@ -11,7 +11,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { MdWork } from 'react-icons/md';
-import img1 from '../assets/img/ias-gaon.png'
+import img1 from '../assets/img/ias1.png'
 import img2 from '../assets/img/googleanalytics.png'
 import img3 from '../assets/img/refdash.png'
 
@@ -73,7 +73,7 @@ export const Projects = () => {
   const projects = [
     {
       title: "IAS Gaon – Institute E-Learning Website",
-      description: "A dedicated e-learning web platform built for the IAS Gaon institute to deliver their exclusive courses online. Developed using React for the frontend and Node.js for the backend, the platform allows students to easily access video lectures, course materials, and structured learning paths designed by the institute. Optimized for both desktop and mobile users.",
+      description: "An e-learning platform for IAS Gaon, built with React and Node.js, enabling students to access video lectures, course materials, and structured learning paths across devices.",
       imgUrl: img1
     },
     {
